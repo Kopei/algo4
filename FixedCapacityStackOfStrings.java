@@ -1,3 +1,12 @@
+/** api
+ * public class FixedCapacityStackOfStrings
+ *        FixedCapacityStackOfStrings(int cap)
+ *   void push(String item)
+ *   String pop()
+ *   boolean isEmpty()
+ *   int size()
+ *   boolean isFull()
+ */
 package edu.princeton.cs.algs4;
 public class FixedCapacityStackOfStrings{
     private String[] s;
@@ -13,7 +22,9 @@ public class FixedCapacityStackOfStrings{
     public String pop(){
         return s[--n];
     }
-
+    public boolean isFull(){
+        return s.length == n;
+    }
     public static void main(String[] args){
         FixedCapacityStackOfStrings s = new FixedCapacityStackOfStrings(100);
         while(!StdIn.isEmpty()){
