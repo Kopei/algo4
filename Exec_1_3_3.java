@@ -1,4 +1,5 @@
-package edu.princeton.cs.algs4;
+
+import java.util.Arrays;
 
 public class Exec_1_3_3 {
     public static boolean checkSequence(int[] v){
@@ -7,14 +8,14 @@ public class Exec_1_3_3 {
         int[] result = new int[n];
         int j = 0, i=0;
         while( i <n && j <= n){
-            if (v[i] == s.peek() && !s.isEmpty()){
+            if (!s.isEmpty() && v[i] == s.peek()){
                 int temp = s.pop();
                 System.out.println("pop is" + temp);
                 result[i] = temp;
                 i++;
             }
             else {
-                if (j < n)s.push(j);
+                if (j < n) s.push(j);
                 j++;
             }
         }
@@ -23,12 +24,14 @@ public class Exec_1_3_3 {
     }
 
     public static void main(String[] args){
-        String[] a = StdIn.readAll().split("\\s+");
-        System.out.println(a);
-        int[] v = new int[a.length];
-        for(int i=0; i<a.length; i++){
-            v[i] = Integer.parseInt(a[i]);
+        int[] v = new int[10];
+        int i = 0;
+        for(String s: args){
+            System.out.println(s);
+            v[i] = Integer.parseInt(s);
+            i++;
         }
+        System.out.println(Arrays.toString(v));
         checkSequence(v);
     }
 }

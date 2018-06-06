@@ -1,30 +1,8 @@
 package edu.princeton.cs.algs4;
+
+
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-/**
- * stack api
- * public class Stack<Item> implements Iterable<Item>
- *              Stack()
- *        void push(Item item)
- *        Item pop()
- *        boolean isEmpty()
- *        int  size()
- */
-/*************************************************************************
- *  Compilation:  javac Stack.java
- *  Execution:    java Stack < input.txt
- *
- *  A generic stack, implemented using a linked list. Each stack
- *  element is of type Item.
- *
- *  % more tobe.txt
- *  to be or not to - be - - that - - - is
- *
- *  % java Stack < tobe.txt
- *  to be not that or be (2 left on stack)
- *
- *************************************************************************/
-
 
 
 /**
