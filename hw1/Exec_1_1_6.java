@@ -1,3 +1,4 @@
+package hw1;
 import edu.princeton.cs.algs4.StdOut;
 
 public class Exec_1_1_6 {
@@ -7,8 +8,8 @@ public class Exec_1_1_6 {
         int g = 1;
         for (int i=0; i<=15; i++)
         {
-            StdOut.println(f);
             f = f+g;
+            StdOut.println("f is:"+f);
             g = f-g;
         }
     }

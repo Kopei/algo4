@@ -1,4 +1,4 @@
-
+package hw1;
 import edu.princeton.cs.algs4.StdOut;
 
 public class Exec_1_1_3 {
