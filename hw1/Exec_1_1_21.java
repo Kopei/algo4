@@ -1,7 +1,7 @@
 package hw1;
 import edu.princeton.cs.algs4.StdIn;
 public class Exec_1_1_21 {
-    // Parameters example: "Rene 2 1 \nBacon 4 3 \nAbcdef 6 2"
+    // java hw1.Exec_1_1_21 < Exec_1_1_21.txt
     public static void main(String[] args) {
 
         System.out.printf("%8s %7s %7s %7s", "Names", "Number1", "Number2", "Result\n");
